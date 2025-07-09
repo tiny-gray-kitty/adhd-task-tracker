@@ -229,7 +229,7 @@ useEffect(() => {
         <div style={styles.header}>
           <h1 style={styles.title}>
             <Sparkles color="#FACC15" />
-            ADHD Task Tracker
+            Task Tracker
             <Sparkles color="#FACC15" />
           </h1>
           <p style={{ color: '#6B7280' }}>Match your tasks to your energy!</p>
