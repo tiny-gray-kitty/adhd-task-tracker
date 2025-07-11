@@ -1,4 +1,20 @@
 function About() {
+
+  const styles = {
+    container: {
+      minHeight: '100vh',
+      background: 'linear-gradient(to bottom right, #C084FC, #EC4899, #FACC15)',
+      padding: '16px'
+    },
+    header: {
+      textAlign: 'center',
+      marginBottom: '32px',
+      backgroundColor: 'white',
+      borderRadius: '16px',
+      padding: '24px'
+    },
+  };
+
   return (
     <div style={{ padding: '2rem', maxWidth: '750px', margin: '0 auto', lineHeight: '1.6' }}>
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>About</h1>
