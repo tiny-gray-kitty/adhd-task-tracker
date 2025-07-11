@@ -557,25 +557,4 @@ const AddTaskForm = ({ onAdd, onCancel, categories, energyLevels, urgencyLevels,
             Add Task
           </button>
           <button
-            type="button"
-            onClick={onCancel}
-            style={{
-              padding: '12px 24px',
-              backgroundColor: '#D1D5DB',
-              color: '#374151',
-              fontWeight: 'bold',
-              borderRadius: '8px',
-              border: 'none',
-              cursor: 'pointer',
-              transition: 'all 0.3s'
-            }}
-          >
-            Cancel
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default TaskTracker;
+     
