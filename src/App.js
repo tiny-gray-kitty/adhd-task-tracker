@@ -11,6 +11,30 @@ const TaskTracker = () => {
 // Add this line near the top where other useState lines are
 const [isFirstLoad, setIsFirstLoad] = useState(true);
 
+// Connecting to About page
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import About from './About';
+
+function Home() {
+  return <h1>Home Page</h1>;
+}
+
+function App() {
+  return (
+    <Router>
+      <nav>
+        <Link to="/">Home</Link> | <Link to="/about">About</Link>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
 // Load tasks from localStorage on mount
 useEffect(() => {
   const savedTasks = localStorage.getItem('adhd-tasks');
